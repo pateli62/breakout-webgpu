@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Problem 3 – Breakout (Two-File, File:// Friendly)</title>
+  <style>
+    body { margin:0; background:#0b0f15; color:#e6edf3; font-family:system-ui; text-align:center; }
+    h3 { margin:12px 0 4px; }
+    canvas { width:600px; height:400px; border:1px solid #2a2a2a; background:#000; display:block; margin:10px auto; }
+    .bar { display:flex; gap:12px; justify-content:center; align-items:center; }
+    .bar input[type="range"] { width:220px; }
+    button { background:#132031; color:#dbe6ff; border:1px solid #2a3b58; padding:6px 10px; border-radius:8px; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <h3>Project 3 – Breakout Game</h3>
+  <div class="bar">
+    <span>Speed</span><input id="speed" type="range" min="0.5" max="3" step="0.1" value="1">
+    <button id="resetBtn">Reset</button>
+    <span>Lives: <b id="lives">3</b></span>
+    <span id="status"></span>
+  </div>
+  <canvas id="canvas" width="600" height="400"></canvas>
+  <div>Controls: Left/Right arrows. Ball resets when it hits the paddle.</div>
+
+  <script defer src="Problem3_iPatel.js"></script>
+</body>
+</html>
